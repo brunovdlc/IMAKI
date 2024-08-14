@@ -209,7 +209,7 @@ body input, body h1, body h3, body a, body span {
   display: flex;
 }
 #app .info .time {
-  color: #ff0000;
+  color: #ffffff;
   font-size: 6em;
   height: 80px;
   line-height: 80px;
