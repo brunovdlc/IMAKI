@@ -769,7 +769,7 @@ footer {
 
 .toggle-play i {
   font-size: 24px;
-  color: #ffffff;
+  color: #00E519;
 }
 
 .fa {
@@ -815,3 +815,41 @@ footer {
 /* Css for <div class="FireFlys"> remove everything below if you remove that div from index.html as this becomes
    uneeded
 */
+
+.title {
+    font-size: 3rem; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative; /* Necessário para o posicionamento absoluto */
+    margin-top: -730px; /* Ajuste para mover o texto para cima */
+    margin-left: 900px; /* Ajuste para mover o texto para a direita */
+    z-index: 9999;
+    
+    /* Inicialmente invisível */
+    opacity: 0;
+    /* Efeitos e Bordas */
+    text-shadow: 
+        1px 1px 0 #00E519, /* Bordas direita e abaixo */
+        -1px -1px 0 #00E519, /* Bordas esquerda e acima */
+        1px -1px 0 #00E519, /* Bordas diagonal superior direita */
+        -1px 1px 0 #00E519; /* Bordas diagonal inferior esquerda */
+
+    /* Adicionando a animação de batida */
+    animation: shake 0.5s infinite, fadeIn 1s forwards;
+}
+
+/* Definindo a animação de batida */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Definindo a animação de aparecimento */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
